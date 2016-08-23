@@ -4,7 +4,7 @@
 	var clear = document.querySelector('.clear');
 		
 
-	timer.innerHTML = '00:00:00<br>000';
+	timer.innerHTML = '<span>00</span>:<span>00</span>:<span>00</span>:<span>000</span>';
 	// var span = document.querySelector('span:nth-child(2)');
 	// span.style.paddingLeft = '0px';
 	start.innerHTML = 'Start';
@@ -38,7 +38,7 @@
 	function stopCount() {
 
 		clearInterval(id);
-		timer.innerHTML = '00:00:00<br>000';
+		timer.innerHTML = '<span>00</span>:<span>00</span>:<span>00</span>:<span>000</span>';
 		start.innerHTML = 'Start';
 		start.addEventListener('click', startCount);
 		msec = 0;
@@ -95,6 +95,6 @@
 			hour = "0" + Number(hour);
 		}
 		++msec;
-		return hour + ':' + min + ':' + sec + '<br>' + msecTime;
+		return '<span>' + hour + '</span>' + ':' + '<span>' + min + '</span>' + ':' + '<span>' + sec + '</span>' + ':' + '<span>' + msecTime + '</span>';
 	}	
 })();
