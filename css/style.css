@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'ds-digitalnormal';
+    src: url('../fonts/ds-digi-webfont.eot');
+    src: url('../fonts/ds-digi-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ds-digi-webfont.woff2') format('woff2'),
+         url('../fonts/ds-digi-webfont.woff') format('woff'),
+         url('../fonts/ds-digi-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.wrapper {
+	width: 700px;
+	height: 800px;
+	margin: auto;
+}
+.display{
+	margin-top: 100px;
+	padding: 20px;
+	background: black;
+}
+.display p {	
+	color: red;
+	text-align: center;
+	padding-top: 30px;
+	font-size: 120px;
+	margin: 0px;
+    font-family: ds-digitalnormal;
+}
+.button-start,
+.button-clear {
+	width: 48%;
+	background-color: #ccc;
+	border: 2px solid black;
+	display: inline-block;	
+	margin-top: 20px;
+}
+.button-clear {
+	background: #ccc;
+	margin-left: 16px;
+}
+.button {
+	cursor: pointer;
+}
+.button-start p,
+.button-clear p {
+	width: 100%;
+	margin: 0;
+	padding: 10px 0;
+	text-align: center;
+	font-size: 30px;
+	text-transform: uppercase;
+}
